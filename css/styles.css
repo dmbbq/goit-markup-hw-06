@@ -42,7 +42,6 @@ p {
 }
 
 .list-element {
-  overflow: hidden;
   display: block;
   max-width: 100%;
   height: auto;
@@ -132,6 +131,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .stuff-soc-link:hover {
@@ -242,6 +244,9 @@ p {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   position: relative;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link.current::after {
   content: "";
@@ -301,9 +306,6 @@ img {
   display: flex;
   margin-right: 76px;
 }
-.header-mail {
-  margin-right: 40px;
-}
 
 .logo-web {
   font-size: 18px;
@@ -338,6 +340,11 @@ img {
 }
 
 .header-mail {
+  margin-right: 40px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -481,6 +488,9 @@ img {
   padding-right: 24px;
   padding-bottom: 12px;
   padding-left: 24px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover,
 :focus {
@@ -606,6 +616,9 @@ img {
   padding: 15px 31px;
   border-color: transparent;
   padding: 15px 31px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn:hover {
   background-color: var(--secondary-button-color);
@@ -673,6 +686,9 @@ img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .ftr-soc-link {
   width: 40px;
