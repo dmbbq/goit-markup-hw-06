@@ -52,7 +52,7 @@ p {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .cards:hover,
-:focus {
+.cards:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -265,7 +265,7 @@ p {
   border-radius: 2px;
 }
 .header-link:hover,
-:focus {
+.header-link:focus {
   color: var(--secondary-button-color);
 }
 
@@ -393,7 +393,7 @@ img {
   /* or 150% */
 
   letter-spacing: 0.02em;
-  margin-bottom: 8px;
+  margin-bottom: 0;
 
   max-width: 264px;
 
@@ -481,7 +481,6 @@ img {
   font-size: 16px;
   line-height: 1.5;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.04em;
   color: var(--secondary-button-color);
   background: var(--back-button-color);
@@ -492,10 +491,11 @@ img {
   padding-right: 24px;
   padding-bottom: 12px;
   padding-left: 24px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color,color,border-color,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover,
-:focus {
+.button:focus
+ {
   background-color: var(--secondary-button-color);
   color: var(--white-color);
   border-color: #404bbf;
@@ -545,11 +545,12 @@ img {
   justify-content: center;
   cursor: pointer;
   color: #000000;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
 
 }
 .close-svg {
   fill: currentColor;
+  transition: background-color,fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
+
 }
 .close:hover .close-svg {
   fill: #fff;
