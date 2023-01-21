@@ -57,13 +57,98 @@
       <section class="headlines-section">
         <h1 class="first-headlines">Effective Solution for Your Business</h1>
         <button data-modal-open class="btn" type="button">Order Service</button>
-        <div data-modal class="backdrop is-hidden">
+        <div data-modal class="backdrop">
           <div class="modal">
             <button data-modal-close class="close">
               <svg class="close-svg" width="8" height="8">
                 <use href="./images/symbol-defs.svg#icon-close"></use>
               </svg>
             </button>
+            <p class="modal-title">
+              Leave your contacts and we will call you back
+            </p>
+
+            <form action="#">
+              <div class="modal-field">
+                <label for="name" class="label-inp">Name</label>
+                <div class="input-wrap">
+                  <input
+                    type="text"
+                    class="modal-input"
+                    name="name"
+                    id="name"
+                    required
+                  />
+
+                  <svg class="input-svg" width="12" height="12">
+                    <use href="./images/symbol-defs.svg#icon-person"></use>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="modal-field">
+                <label for="tel" class="label-inp">Phone</label>
+                <div class="input-wrap">
+                  <input
+                    type="tel"
+                    class="modal-input"
+                    name="tel"
+                    id="tel"
+                    required
+                  />
+
+                  <svg class="input-svg" width="12" height="12">
+                    <use href="./images/symbol-defs.svg#icon-phone"></use>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="modal-field">
+                <label for="mail" class="label-inp">Email</label>
+                <div class="input-wrap">
+                  <input
+                    type="email"
+                    class="modal-input"
+                    name="mail"
+                    id="mail"
+                    required
+                  />
+
+                  <svg class="input-svg" width="12" height="12">
+                    <use href="./images/symbol-defs.svg#icon-message"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="modal-field">
+                <label for="comment" class="label-inp">Comment</label>
+
+                <textarea
+                  name=""
+                  id="comment"
+                  class="modal-comment"
+                  placeholder="Text input"
+                ></textarea>
+              </div>
+              <div class="modal-field">
+                <input
+                  type="checkbox"
+                  class="privacy visually-hidden"
+                  name="privacy"
+                  id="privacy"
+                  value="true"
+                />
+                <label for="privacy" class="check-text"
+                  ><span>
+                    <svg class="check-svg" width="10" height="8">
+                      <use href="./images/symbol-defs.svg#icon-vector"></use>
+                    </svg> </span
+                  >I accept the terms and conditions of the&nbsp;
+                  <a class="link-privacy" href="#">Privacy Policy</a>
+                </label>
+              </div>
+
+              <button type="submit" class="button-submit">Send</button>
+            </form>
           </div>
         </div>
       </section>
