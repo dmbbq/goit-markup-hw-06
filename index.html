@@ -57,7 +57,7 @@
       <section class="headlines-section">
         <h1 class="first-headlines">Effective Solution for Your Business</h1>
         <button data-modal-open class="btn" type="button">Order Service</button>
-        <div data-modal class="backdrop">
+        <div data-modal class="backdrop is-hidden">
           <div class="modal">
             <button data-modal-close class="close">
               <svg class="close-svg" width="8" height="8">
@@ -517,6 +517,20 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div>
+          <form>
+            <label for="email-footer" class="sub-label">Subscribe</label>
+          <input
+            type="email"
+            name="email-footer"
+            class="input-footer"
+            required placeholder="E-mail"
+            id="email-footer"
+          />
+          <button type="submit" class="button-subscribe">Subscribe</button>
+          </form>
+
         </div>
       </div>
     </footer>
